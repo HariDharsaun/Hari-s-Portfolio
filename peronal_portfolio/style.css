@@ -3,6 +3,8 @@ body{
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -28,8 +30,7 @@ html{
     padding:5px;
     padding-left: 15px;
     padding-right: 15px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 10px;
 }
 
 .navigator div:hover{
@@ -50,6 +51,25 @@ html{
     padding-bottom: 45px;
     margin-bottom: 0%;
     margin-top: 65px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes slideIn{
+    from {
+        transform: translateX(-100%);
+    }
+      to {
+        transform: translateX(0);
+    }
 }
 .f-container{
     display: flex;
@@ -63,7 +83,7 @@ html{
     flex-direction: column;
     width: 700px;
     justify-content: center;
-    position
+    animation: slideIn 1.5s ease-in-out; 
 }
 .intro-container h4,p{
     margin:0px;
@@ -116,7 +136,20 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeUp 1.5s ease-in-out;
 }
+
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .d-container{
     width: 500px;
     height: 300px;
@@ -256,14 +289,14 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
-    left: 90px;
+    left: 110px;
 }
 
 .edu-right-cont{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
-    left:20px;
+    left:110px;
 }
 
 .edu-left-cont{
