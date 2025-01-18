@@ -96,6 +96,17 @@ html{
     margin: 20px;
     position: relative;
     right: 30px;
+    animation: imageSlide 1.5s ease-in-out
+}
+
+@keyframes imageSlide {
+    from{
+        transform: translatex(+100%);
+    }
+    to{
+        transform: translatex(0);
+    }
+    
 }
 
 .image-container img{
@@ -414,7 +425,7 @@ html{
 }
 
 .contact-header h3 {
-    font-size: 36px;
+    font-size: 45px;
     color: black;
     margin-bottom: 20px;
 }
