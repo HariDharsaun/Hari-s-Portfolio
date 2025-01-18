@@ -5,6 +5,7 @@ body{
     font-style: normal;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    animation: fadeIn 1.5s ease-in;
 }
 
 html{
@@ -15,9 +16,9 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Changed from sticky to fixed */
-    top: 0; /* Ensures it stays at the top */
-    width: 100%; /* Spans the full width of the viewport */
+    position: fixed;
+    top: 0; 
+    width: 100%; 
     z-index: 1000;
 }
 .navigator{
@@ -35,7 +36,6 @@ html{
 
 .navigator div:hover{
     background-color: lightcoral;
-    color: aliceblue;
 }
 
 .navbar a{
@@ -51,7 +51,6 @@ html{
     padding-bottom: 45px;
     margin-bottom: 0%;
     margin-top: 65px;
-    animation: fadeIn 1.5s ease-in;
 }
 
 @keyframes fadeIn {
@@ -372,32 +371,40 @@ html{
 .edu-img button{
     width:120px;
     height:40px;
-    background-color: lightsalmon;
+    background-color: lightcoral;
     border-radius: 10px;
     position: relative;
     left: 30%;
     bottom:35%;
-    border-color: lightsalmon;
+    border-color: lightcoral;
+    transition: background-color ease 0.3s;
 }
 
 .edu-img button:hover{
     /* background-color: darkblue;
     transition:0.3s ease; */
     transform: scale(1.1);
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
 }
 .edu-right-cont button{
     width:120px;
     height:40px;
-    background-color: lightsalmon;
+    background-color: lightcoral;
     border-radius: 10px;
     position: relative;
     left: 30%;
     bottom:35%;
-    border-color: lightsalmon;
+    border-color: lightcoral;
+    transition: background-color ease-in 0.3s;
 }
 
 .edu-right-cont button:hover{
     transform:scale(1.1);
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
 }
 
 .contact-container {
